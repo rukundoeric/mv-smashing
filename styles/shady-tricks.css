@@ -1,0 +1,16 @@
+#shady-tricks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--dark-grey-5);
+  padding: 50px;
+}
+
+#shady-tricks img {
+  width: 480px;
+  margin-top: 40px;
+}
+
+#shady-tricks h1 {
+  font-family: "Nunito", sans-serif;
+}

@@ -1,0 +1,114 @@
+#latest-articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#latest-articles * {
+  font-family: "Nunito", sans-serif;
+}
+
+#latest-articles p {
+  font-family: "Noto Serif", serif;
+}
+
+.highlight-article-detail {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--dark-grey-2);
+  text-align: center;
+  border: 20px solid var(--lightest-grey);
+}
+
+.latest-article-detail {
+  padding: 15px 45px;
+  padding-bottom: 70px;
+}
+
+.highlight-article-detail {
+  padding: 30px 90px;
+}
+
+.latest-article-detail {
+  background: var(--lightest-grey);
+  border-radius: 8px;
+  position: relative;
+}
+
+#latest-articles,
+#latest-features-button {
+  background: var(--lightest-grey);
+}
+
+#latest-features-button {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+#latest-features-button button {
+  padding: 9px;
+  border: none;
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--dark-grey-2);
+  font-size: 14px;
+}
+
+.latest-article-detail::after {
+  content: "→";
+  color: var(--write);
+  font-size: 1em;
+  display: block;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 0 0 8px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.latest-article-detail:hover {
+  transform: scale(1.1);
+  box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  z-index: 9999;
+}
+
+.latest-article-detail:hover::after {
+  background: grey;
+}
+
+.highlight-article-detail img {
+  width: 200px;
+}
+
+.highlight-article-detail * {
+  margin: 5px 0;
+}
+
+.cta-button {
+  border-radius: 10px;
+  padding: 17px;
+  border: none;
+  margin: 20px 0;
+  background: white;
+}
+
+.highlight-article-detail h4 {
+  font-size: 22px;
+}
+
+.highlight-article-detail h5 {
+  font-size: 12px;
+  font-family: "Noto Serif", serif;
+  text-transform: uppercase;
+}
+
+.highlight-article-detail h6 {
+  font-size: 14px;
+}

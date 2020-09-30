@@ -1,3 +1,6 @@
+@import "./latest-articles.css";
+@import "./shady-tricks.css";
+
 body {
   margin: 0;
 }
@@ -5,6 +8,7 @@ body {
 :root {
   --white: white;
   --light-grey: rgb(219 219 219);
+  --lightest-grey: rgb(239 239 239);
   --dark-grey: silver;
   --dark-grey-1: rgba(53, 53, 53, 0.384);
   --dark-grey-2: rgba(61, 61, 61, 0.384);
@@ -89,14 +93,14 @@ header input {
   background-repeat: no-repeat;
 }
 
-main {
+#main-articles {
   display: grid;
   grid-template-columns: 50% 50%;
   font-family: "Nunito", sans-serif;
   position: relative;
 }
 
-main > h1 {
+#main-articles > h1 {
   display: inline;
   position: absolute;
   top: 40px;
@@ -105,7 +109,7 @@ main > h1 {
   right: 0;
 }
 
-main > h1 span {
+#main-articles > h1 span {
   padding: 11px 20px;
   background-color: var(--white);
 }
@@ -117,21 +121,21 @@ article {
   flex-direction: column;
 }
 
-main article:nth-child(2) {
+#main-articles article:nth-child(2) {
   background-color: var(--dark-grey-4);
   padding-top: 200px;
 }
 
-main article:nth-child(3) {
+#main-articles article:nth-child(3) {
   background-color: var(--dark-grey-5);
   padding-top: 200px;
 }
 
-main article:nth-child(4) {
+#main-articles article:nth-child(4) {
   background-color: var(--dark-grey-5);
 }
 
-main article:nth-child(5) {
+#main-articles article:nth-child(5) {
   background-color: var(--dark-grey-4);
 }
 
