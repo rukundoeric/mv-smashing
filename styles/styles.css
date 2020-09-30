@@ -1,3 +1,65 @@
 body {
   margin: 0;
 }
+
+:root {
+  --light-grey: rgb(219 219 219);
+  --dark-grey: silver;
+}
+
+header {
+  background: var(--dark-grey);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header li {
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header #logo {
+  /* margin-bottom: -3%; */
+  height: 60px;
+}
+
+header #nav-more img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+header #nav-more {
+  display: flex;
+}
+
+header #nav-more a {
+  display: flex;
+  align-items: center;
+}
+
+header input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: white;
+  /* stylelint-disable */
+  background-image: url("../assets/search-icon.svg"),
+    /* stylelint-enable */ linear-gradient(to top, white, white);
+  background-position: 5px center, 0 center;
+  background-repeat: no-repeat;
+}
