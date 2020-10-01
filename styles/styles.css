@@ -120,7 +120,7 @@ nav input {
   background-color: var(--white);
 }
 
-article {
+#main-articles article {
   padding: 80px;
   height: 500px;
   display: flex;
@@ -194,43 +194,43 @@ article {
   transition: all 0.3s ease-in-out;
 }
 
-article > a {
+#main-articles article > a {
   font-size: 40px;
   margin-top: 30px;
 }
 
-article > a span {
+#main-articles article > a span {
   font-size: 20px;
 }
 
-article > a span i {
+#main-articles article > a span i {
   font-size: 17px;
   margin-right: 5px;
   transform: scalex(-1);
 }
 
-article ul,
+#main-articles article ul,
 li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-article ul {
+#main-articles article ul {
   margin-top: 50px;
   display: flex;
   flex-direction: row;
 }
 
-article li {
+#main-articles article li {
   margin-right: 10px;
 }
 
-article li div {
+#main-articles article li div {
   padding: 10px 10px 10px 0;
 }
 
-article li div i {
+#main-articles article li div i {
   color: var(--write);
   margin-right: 5px;
 }
@@ -415,8 +415,9 @@ article li div span {
 }
 
 #design-system .left a {
+  margin-top: 20px;
   font-size: 25px;
-  color: var(--white);
+  color: var(--dark-grey-6);
 }
 
 #design-system .left a h1 {
@@ -427,6 +428,7 @@ article li div span {
 #design-system .left p {
   font-size: 17px;
   line-height: 23px;
+  margin-bottom: 40px;
   color: var(--white);
 }
 
