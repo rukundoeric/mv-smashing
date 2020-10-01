@@ -475,3 +475,55 @@ article li div span {
   padding: 20px 30px;
   background-color: var(--dark-grey-6);
 }
+
+#guides #last-item {
+  grid-column: 2 / span 1;
+}
+
+#guides #last-item h5,
+#guides #last-item h2 {
+  margin: 0;
+}
+
+#guides #last-item img {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+#guides h2,
+#guides button {
+  font-family: "Nunito", sans-serif;
+}
+
+#guides #last-item p#incentive {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.3;
+  background: var(--light-grey);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#guides #guides-subscribe {
+  display: flex;
+  height: 40px;
+}
+
+#guides #guides-subscribe input {
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  background: var(--lightest-grey);
+  flex-grow: 1;
+}
+
+#guides #guides-subscribe button {
+  padding: 0 30px;
+  background: var(--dark-grey-4);
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
