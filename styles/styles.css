@@ -527,3 +527,10 @@ article li div span {
   border: none;
   border-radius: 0 5px 5px 0;
 }
+
+#guides-footer {
+  display: flex;
+  justify-content: center;
+  background: var(--dark-grey);
+  margin-top: -25px;
+}
